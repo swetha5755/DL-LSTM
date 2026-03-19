@@ -4,32 +4,31 @@
 To develop an LSTM-based model for recognizing the named entities in the text.
 
 ## Problem Statement and Dataset
-
+The task is to identify and classify named entities such as person names, locations, organizations, etc., from a given text using an LSTM model. The dataset consists of sentences where each word is labeled with its corresponding entity tag (like B-PER, I-LOC, O, etc.).
 
 ## DESIGN STEPS
 ### STEP 1: 
-
-Write your own steps
+Load and preprocess the dataset by tokenizing the text and converting words and labels into numerical format.
 
 ### STEP 2: 
-
+Pad the input sequences to make all sentences of equal length.
 
 
 ### STEP 3: 
 
-
+Build the LSTM model with embedding layer, LSTM layer, and a dense output layer for classification.
 
 ### STEP 4: 
 
-
+Compile the model using appropriate loss function (like categorical cross-entropy) and optimizer.
 
 ### STEP 5: 
 
-
+Train the model using the training data and validate it using validation data.
 
 ### STEP 6: 
 
-
+Evaluate the model performance and use it to predict named entities in new text.
 
 
 
@@ -93,10 +92,12 @@ def train_model(model, train_loader, test_loader, loss_fn, optimizer, epochs=3):
 
 ## Loss Vs Epoch Plot
 
+<img width="581" height="501" alt="image" src="https://github.com/user-attachments/assets/a2a07f46-5808-4866-8383-d0cd4f21129c" />
 
 
 ### Sample Text Prediction
-Include your sample text prediction here
+<img width="288" height="410" alt="image" src="https://github.com/user-attachments/assets/0f9550bb-756d-483a-bd4d-340fc21dca93" />
+
 
 ## RESULT
-Include your result here
+This program has been executed successfully.
